@@ -1,0 +1,34 @@
+{
+  "connection": "default",
+  "collectionName": "casestudies",
+  "info": {
+    "name": "casestudy",
+    "description": "list of case studies and their contents"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "content": {
+      "required": true,
+      "type": "richtext"
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}
